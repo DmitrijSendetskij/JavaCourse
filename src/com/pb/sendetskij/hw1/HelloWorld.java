@@ -18,5 +18,6 @@ package com.pb.sendetskij.hw1;
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("HelloWorld");
+        System.out.println("Вкажіть один математичний оператор для виконнаня дій: '+','-','*','\'");
     }
 }
