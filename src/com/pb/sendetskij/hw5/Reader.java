@@ -52,4 +52,26 @@ public class Reader {
         return answerCountBook;
     }
     ///////////////////////////////////////////////////////
+    public static String returnBook(int CountBoks) {
+        String answerCountBook = "Петров В.В. вернул " + CountBoks + " книги";
+        return answerCountBook;
+    }
+    public static Object returnBook(String ListBooks) {
+        String[] ArrayListBook = ListBooks.split(",");
+        String ListBook = "";
+        for(int i = 0; i<ArrayListBook.length; i++){
+            ListBook = ListBook + ArrayListBook[i] + ",";
+        }
+        String answerCountBook = "Петров В.В. вернул книги: " + ListBook;
+        return answerCountBook;
+    }
+    public static Object returnBook(Book[] books) {
+        String ListObj = "";
+        for(int i = 0; i<books.length; i++){
+            ListObj = ListObj + books[i].getType() + " (" + books[i].getAuthor() + " " + books[i].getYear() + "),";
+
+        }
+        String answerCountBook = "Петров В.В. вернул : " + ListObj;
+        return answerCountBook;
+    }
 }

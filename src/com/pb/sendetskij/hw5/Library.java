@@ -60,6 +60,26 @@ public class Library {
          * перечень объектов
          */
         System.out.println(Reader.takeBook(books));
+        /////////////////////////////////////////////////////////
+        /**
+         * Колличество сданных книг через указания в консоле
+         */
+        System.out.println("Введіть кількість книжок");
+        int CountBoksReturn = scan.nextInt();
+        System.out.println(Reader.returnBook(CountBoksReturn));
+
+        /**
+         * Цикл для получения перечня взятых книг
+         */
+        String ListBookStringReturn = "";
+        for (int i = 0; i < books.length; i++) {
+            ListBookStringReturn = ListBookStringReturn + books[i].getNamebook() + ",";
+        }
+        System.out.println(Reader.returnBook(ListBookStringReturn));
+        /**
+         * перечень объектов
+         */
+        System.out.println(Reader.returnBook(books));
     }
 }
 
