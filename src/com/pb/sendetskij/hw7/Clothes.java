@@ -2,40 +2,25 @@ package com.pb.sendetskij.hw7;
 
 public abstract class Clothes {
     private String name;
-    private String size;
-    private int cost;
-    private String color;
+    protected Size size;
+    protected int cost;
+    protected String color;
 
-    public String getName() {
-        return name;
-    }
+    public String getName() {return name;};
+    public void setName(String name) {this.name = name;};
+    public int getCost() {return cost;};
+    public void setCost(int cost) {this.cost = cost;};
+    public String getColor() {return color;};
+    public void setColor(String color) {this.color = color;};
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
+    public Clothes(Size size, int cost, String color) {
         this.size = size;
-    }
-
-    public int getCost() {
-        return cost;
-    }
-
-    public void setCost(int cost) {
         this.cost = cost;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
         this.color = color;
     }
 
+    public String info(){
+
+        return  "Розмір: " +  size.name() + "/"+ size.getDescription() + "/" + size.getEuroSize()  + " Колір:" + color + " Вартість: " + cost;
+    };
 }

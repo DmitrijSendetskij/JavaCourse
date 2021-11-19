@@ -56,4 +56,5 @@ public class Dog extends Animal{
         Object answer = null;
         return answer == Dog.getAnimal() ;
     }
+    
 }

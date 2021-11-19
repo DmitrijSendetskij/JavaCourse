@@ -2,7 +2,7 @@ package com.pb.sendetskij.hw6;
 
 public class VetClinic {
     public static void main(String[] args) throws Exception {
-        Animal[] animals = new Animal[5];
+        Animal[] animals = new Animal[4];
         animals[0] = new Dog(10,25,"Вася","Мясо","Будка");
         animals[1] = new Dog(15,20,"Муму","Кости","Дом");
         animals[2] = new Cat(1,2,"Изя","Корм","Дом");

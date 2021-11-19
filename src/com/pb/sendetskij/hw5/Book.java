@@ -1,6 +1,5 @@
 package com.pb.sendetskij.hw5;
 
-import com.pb.sendetskij.hw3.Array;
 
 import java.util.ArrayList;
 import java.util.Scanner;
