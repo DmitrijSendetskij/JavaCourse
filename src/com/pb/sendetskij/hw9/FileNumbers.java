@@ -43,8 +43,16 @@ public class FileNumbers {
                             array[i][j] = randomNum;
                             file.write(array[i][j] + " ");
                         }
+
                         file.write("\n");
                     }
+                    for (int i = 0; i < array.length; i++) {
+                        System.out.println();
+                        for (int j = 0; j < array[i].length; j++) {
+                            System.out.print(array[i][j]+" ");
+                        }
+                    }
+                    System.out.println();
                     String answer = "Файл створено";
                     return answer;
                 } catch (Exception e) {
@@ -80,6 +88,14 @@ public class FileNumbers {
                     }
                     file.write("\n");
                 }
+
+                for (int i = 0; i < records.length; i++) {
+                    System.out.println();
+                    for (int j = 0; j < records[i].length; j++) {
+                        System.out.print(records[i][j]+" ");
+                    }
+                }
+                System.out.println();
                 String answer = "Файл створено";
                 return answer;
             } catch (Exception e) {
@@ -94,4 +110,5 @@ public class FileNumbers {
 
 
     }
+
 }
